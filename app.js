@@ -15,7 +15,6 @@ app.post('/', (req, res) => {
     `https://api.openweathermap.org/data/2.5/weather?appid=f93d705656b807f8c83775c1c5bd3124&q=${city}&units=metric`;
   https.get(url, (response) => {
     response.on('data', data => {
-      console.log(JSON.parse(data))
       let parsedData = JSON.parse(data)
       let temperature = parsedData.main.temp
       let imgurl = parsedData.weather[0].icon;
