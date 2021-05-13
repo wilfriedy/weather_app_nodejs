@@ -46,10 +46,6 @@ app.post('/', (req, res) => {
       </div>`
         );
 
-        res.write(
-          ``
-        );
-
 
       }
       res.send()
