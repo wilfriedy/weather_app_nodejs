@@ -59,4 +59,4 @@ app.post('/', (req, res) => {
 
 
 
-app.listen(3000, () => console.log('port started'))
+app.listen(process.env.PORT || 3000, () => console.log('port started'))
